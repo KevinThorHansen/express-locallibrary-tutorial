@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+  head
+    title  Random Image 
+    script(src='https://kit.fontawesome.com/a076d05399.js')
+    link(rel='stylesheet' href='randompicturekopi.css')
+    script(src='randompicturekopi.js')
+  body
+    #container
+      #inner_container
+        img#person_pic
+        p#person_name  
+      #button_container
+        //
+          Skal bruge parat/klar knappen, når man har joinet en session, til at udvælge ét billede/person + en timer
+        button(onclick='random_person()')
+          i.fas.fa-random
+      p  Name of person:
+      p  Age of person:
+      p  Gender of person:
+      p  Facts:
+      p  Forbidden words/names:

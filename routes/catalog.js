@@ -6,8 +6,13 @@ var book_controller = require('../controllers/bookController');
 var author_controller = require('../controllers/authorController');
 var genre_controller = require('../controllers/genreController');
 var book_instance_controller = require('../controllers/bookinstanceController');
+var image_controller = require('../controllers/game_object_controller');
+
+// GET request for image.celebImage
+router.get('/image', image_controller.image); 
 
 /// BOOK ROUTES ///
+
 
 // GET catalog home page.
 router.get('/', book_controller.index);
@@ -61,6 +66,7 @@ router.get('/author/:id', author_controller.author_detail);
 
 // GET request for list of all Authors.
 router.get('/authors', author_controller.author_list);
+
 
 /// GENRE ROUTES ///
 
